@@ -1,0 +1,103 @@
+// next race widget
+.nextRaceWidget{
+	background: #333;
+	border-radius: 3px;
+	overflow: hidden;
+	&__header{
+		color: #fff;
+		padding: 7px 10px;
+		position: relative;
+	}
+	&__header-image{
+		line-height: 20px;
+		vertical-align: text-top;
+		margin-right: 8px;
+	}
+	&__header-title{
+		@extend .nextRaceWidget__header-text;
+  		font-weight: 700;
+	}
+	&__header-countdown{
+		@extend .nextRaceWidget__header-text;
+		position: absolute;
+		right: 10px;
+		top: 7px;
+	}
+	&__header-text{
+		font-size: 11px;
+		line-height: 20px;
+  		letter-spacing: 0;
+  		margin: 0;
+	}
+	&__hr{
+		margin: 0 10px;
+		border-top: 1px solid #666;
+	}
+	&__sub-header{
+		@extend .nextRaceWidget__header;
+	}
+	&__detail{
+		line-height: 13px;
+		border-right: 1px solid #666;
+		display: inline-block;
+		margin-right:5px;
+		padding-right:5px;
+		&:last-of-type{
+			line-height: 20px;
+		}
+	}
+	&__typeImg{
+		position: absolute;
+		top: 9px;
+		right: 10px;
+	}
+	&__body{
+		background: #fff;
+		margin:0 4px 4px;
+	}
+}
+
+.runnersList{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.runnersListItem{
+	padding: 12px 10px;
+	position: relative;
+	border-bottom: 1px solid #D9D9D9;
+	&:last-of-type{
+		border-bottom: 0;
+	}
+	&__img{
+		width: 18px;
+		height: 18px;
+		display: inline-block;
+		vertical-align: text-top;
+		margin-right: 5px;
+	}
+	&__name{
+		font-size: 11px;
+		color: #414141;
+	}
+	&__btn{
+		position: absolute;
+		right: 11px;
+		top: 11px;
+		display: inline-block;
+		padding: 2px 10px;
+		font-size: 11px;
+		line-height: 1.364;
+		border-radius: 3px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		box-shadow: #ffe193 0 1px 0 inset;
+  		border: 1px solid #f9b120;
+  		background: #f8ae17;
+  		background-image: linear-gradient(#ffdd86, #f8ae17);
+  		color: #333;
+  		font-weight: 300;
+  		width: 17px;
+	}
+}

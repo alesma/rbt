@@ -1,0 +1,28 @@
+@import "../common/normalize";
+@import "../common/font";
+@import "../common/mixin/clearfix";
+
+.body{
+	font-size: 11px;
+	line-height: 1.27348;
+	color: #444;
+}
+.container{
+	width: 1250px;
+	margin: 0 auto;
+	padding-top: 10px;
+	@include clearfix;
+}
+.sidebar{
+	width: 220px;
+	float:left;
+	margin-right: 20px;
+	&--right{
+		@extend .sidebar;
+		width: 240px;
+	}
+}
+
+body{
+	font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
