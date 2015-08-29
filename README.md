@@ -4,7 +4,7 @@ For this task I used [React](http://facebook.github.io/react/) and the [Flux](ht
 
 # Get it running
 
-```
+```shell
 git clone https://github.com/alesma/rbt.git
 cd rbt 
 npm install # Install Node.js components listed in ./package.json
