@@ -43,7 +43,7 @@
 		margin-right:5px;
 		padding-right:5px;
 		&:last-of-type{
-			line-height: 20px;
+			border-right: 0;
 		}
 	}
 	&__typeImg{
